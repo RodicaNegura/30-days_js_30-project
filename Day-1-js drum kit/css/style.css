@@ -17,3 +17,17 @@ body,html {
   align-items: center;
   justify-content: center;
 }
+
+.key {
+  border: 0.4rem solid black;
+  border-radius: 0.5rem;
+  margin: 1rem;
+  font-size: 1.9rem;
+  padding: 1rem 0.5rem;
+  transition: all 0.07s ease;
+  width: 10rem;
+  text-align: center;
+  color: white;
+  background: rgba(0, 0, 0, 0.6);
+  text-shadow: 0 0 0.5rem black;
+}
