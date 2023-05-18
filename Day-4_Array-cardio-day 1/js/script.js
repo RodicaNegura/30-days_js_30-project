@@ -22,11 +22,24 @@ const people = [
 ];
 
 // Array.prototype.filter()
-    // 1. Filter the list of inventors for those who were born in the 1500's
+  // 1. Filter the list of inventors for those who were born in the 1500's
 const fifteen = inventors.filter(inventor => (inventor.year >= 1500 && inventor.year < 1600))
 console.table(fifteen);
 
  // Array.prototype.map()
-    // 2. Give us an array of the inventor first and last names
+  // 2. Give us an array of the inventor first and last names
 const fullNames = inventors.map(inventor => `${inventor.first} ${inventor.last}`);
 console.log(fullNames);
+
+// Array.prototype.sort()
+  // 3. Sort the inventors by birthdate, oldest to youngest
+// const ordered = inventors.sort(function(a, b) {
+//   if(a.year > b.year) {
+//     return 1;
+//   } else {
+//     return -1;
+//   }
+// });
+const ordered = inventors.sort((a, b) => a.year > b.year ? 1: -1);
+console.table(ordered);
+
